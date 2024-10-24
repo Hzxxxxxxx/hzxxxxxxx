@@ -57,7 +57,6 @@ function About(props) {
             }}
           >
             <strong>Hey, I'm Zixiang, </strong>
-            
             and I’m currently a postgraduate student of the University of Manchester, majoring in <strong>Robotics</strong>.
           </Paragraph>
           <Paragraph>
@@ -77,8 +76,7 @@ function About(props) {
 
     return (
       <div>
-        <p>
-        </p>
+        <p></p>
         <blockquote>
           <p>{description}</p>
         </blockquote>
@@ -98,14 +96,14 @@ function About(props) {
             as="a"
             download
             role="button"
-            href="/static/images/avatar.jpg"
+            href="/static/vedio/CV.pdf" // Updated to link to your CV
             style={btnStyle}
-            onClick={downloadHeadshot}
+            onClick={downloadCV} // Updated function
             onMouseEnter={() => downloadRef.current?.play()}
             onMouseLeave={() => downloadRef.current?.stop()}
           >
             <Lottie lottieRef={downloadRef} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
-            Download Headshot
+            Download CV
           </ButtonPrimary>
         </ButtonsContainer>
       </div>
@@ -171,9 +169,9 @@ function About(props) {
     return durationStr
   }
 
-  const downloadHeadshot = () => {
-    setToastTitle('Downloading...')
-    setToastDescription('You can now add this photo to your fancy site.')
+  const downloadCV = () => { // Updated function name
+    setToastTitle('Downloading CV...')
+    setToastDescription('Your CV is being downloaded.')
     setShowToast(true)
   }
 
