@@ -53,10 +53,16 @@ const FeaturedArticleContainer = styled('div', {
 })
 
 // FeaturedArticle component definition
-const FeaturedArticle = ({ title, description, image, stats, content }) => {
+const FeaturedArticle = ({ title, description, image, link }) => {
   return (
     <FeaturedArticleContainer>
-      <h3>{title}</h3>
+      <h3>
+        {link ? (
+          <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+        ) : (
+          title
+        )}
+      </h3>
       
       {image} {/* Ensure the image is rendered */}
 
@@ -69,6 +75,8 @@ const FeaturedArticle = ({ title, description, image, stats, content }) => {
 function Articles(props) {
   const renderFeatured = () => {
     return props.featuredPosts.map((post, index) => {
+      const link = index === 0 ? 'https://www.mdpi.com/2079-9292/12/20/4370' : undefined; // Add link for the first article
+
       return (
         <FeaturedArticle
           key={index}
@@ -77,6 +85,7 @@ function Articles(props) {
           title={post.title}
           description={post.description}
           image={<StyledImage src={post.image || 'https://via.placeholder.com/300'} alt={post.title} />}
+          link={link} // Pass the link prop
           stats={post.stats}
           content={post.content}
         />
