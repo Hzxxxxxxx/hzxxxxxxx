@@ -17,6 +17,7 @@ export async function getStaticProps() {
   }
 }
 
+
 export default function Index(props) {
   const { title, description, image } = props
 
