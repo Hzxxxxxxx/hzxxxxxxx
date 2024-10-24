@@ -7,16 +7,15 @@ import { useKBar } from 'kbar'
 
 export default function Navbar() {
   const router = useRouter()
+  
+  // 使用新的页面和对应的路径映射
   const pages = [
-    'About',
-    'Articles',
-    'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
-    'Uses',
-    'Reminder',
+    { name: 'About', path: '/about' },
+    { name: 'Research', path: '/articles' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Experiences', path: '/talks' },
   ]
+
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
 
@@ -29,19 +28,18 @@ export default function Navbar() {
 
         <Nav>
           <List>
-            {pages.map(page => {
-              const path = `/${page.toLowerCase()}`
-              const isHovered = hovered === page
+            {pages.map(({ name, path }) => {
+              const isHovered = hovered === name
 
               return (
-                <li key={page}>
+                <li key={name}>
                   <Link href={path} passHref>
                     <Anchor>
                       <NavContainer
-                        onHoverStart={() => setHovered(page)}
+                        onHoverStart={() => setHovered(name)}
                         onHoverEnd={() => setHovered('')}
                         css={
-                          router.pathname == path
+                          router.pathname === path
                             ? {
                                 color: '$primary',
                                 '&::after': { opacity: 1 },
@@ -57,7 +55,7 @@ export default function Navbar() {
                             exit={{ opacity: 0 }}
                           />
                         )}
-                        {page}
+                        {name}
                       </NavContainer>
                     </Anchor>
                   </Link>
@@ -114,7 +112,6 @@ const ButtonHeader = styled('div', {
   border: 'none',
   borderRadius: '$borderRadius',
   color: 'white',
-  cursor: 'pointer',
   cursor: 'pointer',
   height: '34px',
   padding: '0 10px',

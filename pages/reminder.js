@@ -5,7 +5,7 @@ import { Box } from '../components/Box'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Reminder // Zeno Rocha',
+    title: 'Reminder // Zixiang He',
     description:
       'Time is the most important asset. Time does not equal money. Time equals life. And you only have one chance to make it right.',
     tagline: 'Tick-tock. Tick-tock.',
@@ -27,8 +27,8 @@ function Reminder(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com/reminder" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://Hzxxxxxxx.com/reminder" property="og:url" />
+        <meta content={`https://Hzxxxxxxx.com${image}`} property="og:image" />
       </Head>
 
       <Box css={{ textAlign: 'justify' }}>

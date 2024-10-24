@@ -1,6 +1,6 @@
 ---
-title: The two types of quality
-description: "The Japanese define quality in two ways — atarimae hinshitsu and miryokuteki hinshitsu. Understanding the difference between them is the key to building products that users love."
+title: Research on Resource Allocation of Autonomous Swarm Robots Based on Game Theory
+description: "This paper models resource allocation in autonomous swarm robots during emergencies as a two-stage game. Resource-providing robots determine production and pricing, while resource-consuming robots decide how much to buy based on prices. In the first stage, a Cournot game is used to adjust production based on supply and demand. In the second stage, both types of robots play a pricing game to find optimal strategies for pricing and purchasing."
 image: /static/img/posts/quality.jpg
 date: "2022-08-04"
 ---

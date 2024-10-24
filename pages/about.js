@@ -15,10 +15,10 @@ import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Zixiang He',
     description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Create. Share. Repeat.',
+      "My focus is on developing intelligent robotic systems, particularly through the application of model predictive control and game theory. I am involved in projects that integrate theory with practice, including robotic arm control and the use of the Robot Operating System (ROS and ROS2).",
+    tagline: 'Explore. Engineer. Excel.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -56,21 +56,15 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Hey, I'm Zixiang, </strong>
+            
+            and I’m currently a postgraduate student of the University of Manchester, majoring in <strong>Robotics</strong>.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
+            I’m excited to be part of this dynamic field, where <strong>innovation meets creativity </strong>and <strong>endless possibilities unfold</strong>. I’m always eager to learn and collaborate with others who share my passion for advancing the future of technology!
           </Paragraph>
           <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            I look forward to contributing to advancements in the field and addressing <strong>real-world challenges</strong>.
           </Paragraph>
         </Section>
       </Container>
@@ -84,8 +78,6 @@ function About(props) {
     return (
       <div>
         <p>
-          This is made for journalists, podcast hosts, and event organizers to
-          copy-and-paste.
         </p>
         <blockquote>
           <p>{description}</p>
@@ -99,7 +91,7 @@ function About(props) {
             onMouseLeave={() => copyBioRef.current?.stop()}
           >
             <Lottie lottieRef={copyBioRef} style={iconStyle} animationData={copyBioIcon} loop={false} autoplay={false} />
-            Copy Bio
+            Copy Research Interests
           </ButtonPrimary>
           <span style={{ margin: '0 20px 0 10px' }}>•</span>
           <ButtonPrimary
@@ -117,6 +109,19 @@ function About(props) {
           </ButtonPrimary>
         </ButtonsContainer>
       </div>
+    )
+  }
+
+  const renderSkills = () => {
+    return (
+      <Section>
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> C++, Python</li>
+          <li><strong>Languages:</strong> Chinese (Native), English</li>
+          <li><strong>Technologies:</strong> ROS2, ROS, Rviz, Gazebo</li>
+        </ul>
+      </Section>
     )
   }
 
@@ -188,16 +193,19 @@ function About(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://Hzxxxxxxx.com/about" property="og:url" />
+        <meta content={`https://Hzxxxxxxx.com${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}
 
-      <h2>Bio</h2>
+      <h2>Research Interests</h2>
       {renderBio()}
 
-      <h2>Career</h2>
+      {/* New Skills Section */}
+      {renderSkills()}
+
+      {/*<h2>Career</h2>*/}
       {renderAll()}
 
       <Toast

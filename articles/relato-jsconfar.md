@@ -80,7 +80,7 @@ Brincadeiras à parte, foi tudo muito legal, o feedback positivo e a missão cum
 
 [![](/static/img/tumblr/tumblr_m4jafsXrVJ1qe3219.jpg)](https://twitter.com/dcaliri/status/204307039604838400)
 
-[“Excelente síntesis de JSConfar por Zeno Rocha” - NodeJS en español](http://www.nodejs.es/excelente-sintesis-jsconfar-zeno-rocha/)
+[“Excelente síntesis de JSConfar por Zixiang He” - NodeJS en español](http://www.nodejs.es/excelente-sintesis-jsconfar-zeno-rocha/)
 
 E não teria como eu terminar esse relato sem citar esses caras, que me apoiaram muito durante os dias por lá e me passaram a confiança pra chegar lá na frente de todo mundo e  mandar bem.
 

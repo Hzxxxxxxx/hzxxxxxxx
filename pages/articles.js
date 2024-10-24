@@ -4,10 +4,10 @@ import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import { getAllPosts, getPostBySlug } from '../lib/blog'
 import ListItem from '../components/ListItem'
-import FeaturedArticle from '../components/FeaturedArticle'
-import { ListGroup } from '../components/ListGroup'
+import { ListGroup as OriginalListGroup } from '../components/ListGroup'
 import { AnimateSharedLayout } from 'framer-motion'
 
+// Fetch static props
 export async function getStaticProps() {
   const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
 
@@ -27,8 +27,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: 'Articles // Zeno Rocha',
-      tagline: 'Stories. Updates. Guides.',
+      title: 'Research // Zixiang He',
+      tagline: 'Design. Innovate. Inspire.',
       image: '/static/images/articles-bw.jpg',
       primaryColor: 'yellow',
       secondaryColor: 'pink',
@@ -36,6 +36,34 @@ export async function getStaticProps() {
       allPosts,
     },
   }
+}
+
+// Define custom image styles
+const StyledImage = styled('img', {
+  width: '100%', // Set image to take full width of its container
+  maxWidth: '500px', // Maximum width for larger screens
+  height: 'auto', // Maintain aspect ratio
+  objectFit: 'cover', // Cover the container to avoid distortion
+  marginTop: '20px', // Adjust margin-top to increase space between text and image
+})
+
+// Define custom container styles for FeaturedArticle
+const FeaturedArticleContainer = styled('div', {
+  marginBottom: '40px', // Add margin-bottom to create space between articles
+})
+
+// FeaturedArticle component definition
+const FeaturedArticle = ({ title, description, image, stats, content }) => {
+  return (
+    <FeaturedArticleContainer>
+      <h3>{title}</h3>
+      
+      {image} {/* Ensure the image is rendered */}
+
+      <p>{description}</p>
+      {/* Render other content like stats if needed */}
+    </FeaturedArticleContainer>
+  )
 }
 
 function Articles(props) {
@@ -48,7 +76,7 @@ function Articles(props) {
           href={`/${post.slug}/`}
           title={post.title}
           description={post.description}
-          image={post.image}
+          image={<StyledImage src={post.image || 'https://via.placeholder.com/300'} alt={post.title} />}
           stats={post.stats}
           content={post.content}
         />
@@ -73,7 +101,7 @@ function Articles(props) {
   }
 
   const { title, image } = props
-  const description = `Here you can find all the <strong>${props.allPosts.length} articles</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.`
+  const description = `Here you can find all the articles I have written. This collection showcases my work on various topics, reflecting my research interests and insights in the field of robotics.`
 
   return (
     <>
@@ -82,26 +110,30 @@ function Articles(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/articles" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://Hzxxxxxxx.com/articles" property="og:url" />
+        <meta content={`https://Hzxxxxxxx.com${image}`} property="og:image" />
       </Head>
 
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
-
-        <h2>Featured Articles</h2>
+        <h2>Articles</h2>
         <FeaturedArticles>{renderFeatured()}</FeaturedArticles>
-
-        <h2>All Articles</h2>
-        <ListGroup>{renderAll()}</ListGroup>
       </AnimateSharedLayout>
     </>
   )
 }
 
+// Adjust FeaturedArticles styles to increase bottom margin
 const FeaturedArticles = styled('div', {
-  margin: '10px 0 0 -20px',
-  '@bp2': { display: 'flex', justifyContent: 'space-between' },
+  margin: '10px 25px 0px -10px', // Add margin-bottom to create space below FeaturedArticles
+  '@bp2': { display: 'block' }, // Responsive display styles
+})
+
+// Wrap the imported ListGroup component to add spacing
+const StyledListGroup = styled(OriginalListGroup, {
+  marginTop: '80px',
+  marginBottom: '80px',
+  // Add margin-top to create space above All Articles section
 })
 
 Articles.Layout = Base

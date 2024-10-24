@@ -68,7 +68,7 @@ const ImageContainer = styled('div', {
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
-  filter: 'grayscale(1)',
+  filter: 'grayscale(0)',
 })
 
 const Content = styled('div', {

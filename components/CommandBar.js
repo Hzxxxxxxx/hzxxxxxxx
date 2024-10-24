@@ -68,16 +68,7 @@ export default function CommandBar(props) {
       perform: () => router.push('/contact'),
       icon: <Lottie lottieRef={emailRef} style={iconSize} animationData={emailIcon} loop={false} autoplay={false} />,
     },
-    {
-      id: 'source',
-      name: 'View Source',
-      shortcut: ['s'],
-      keywords: 'view-source',
-      section: 'General',
-      perform: () =>
-        window.open('https://github.com/zenorocha/zenorocha.com', '_blank'),
-      icon: <Lottie lottieRef={sourceRef} style={iconSize} animationData={sourceIcon} loop={false} autoplay={false} />,
-    },
+    
     {
       id: 'home',
       name: 'Home',
@@ -97,10 +88,10 @@ export default function CommandBar(props) {
       icon: <Lottie lottieRef={aboutRef} style={iconSize} animationData={aboutIcon} loop={false} autoplay={false} />,
     },
     {
-      id: 'articles',
-      name: 'Articles',
+      id: 'research',
+      name: 'Research',
       shortcut: ['g', 'b'],
-      keywords: 'go-articles',
+      keywords: 'go-research',
       section: 'Go To',
       perform: () => router.push('/articles'),
       icon: <Lottie lottieRef={articlesRef} style={iconSize} animationData={articlesIcon} loop={false} autoplay={false} />,
@@ -115,50 +106,15 @@ export default function CommandBar(props) {
       icon: <Lottie lottieRef={projectsRef} style={iconSize} animationData={projectsIcon} loop={false} autoplay={false} />,
     },
     {
-      id: 'talks',
-      name: 'Talks',
+      id: 'experiences',
+      name: 'experiences',
       shortcut: ['g', 't'],
-      keywords: 'go-talks',
+      keywords: 'go-experiences',
       section: 'Go To',
       perform: () => router.push('/talks'),
       icon: <Lottie lottieRef={talksRef} style={iconSize} animationData={talksIcon} loop={false} autoplay={false} />,
     },
-    {
-      id: 'podcasts',
-      name: 'Podcasts',
-      shortcut: ['g', 'c'],
-      keywords: 'go-podcasts',
-      section: 'Go To',
-      perform: () => router.push('/podcasts'),
-      icon: <Lottie lottieRef={podcastsRef} style={iconSize} animationData={podcastsIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'investing',
-      name: 'Investing',
-      shortcut: ['g', 'i'],
-      keywords: 'go-investing',
-      section: 'Go To',
-      perform: () => router.push('/investing'),
-      icon: <Lottie lottieRef={investingRef} style={iconSize} animationData={investingIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'uses',
-      name: 'Uses',
-      shortcut: ['g', 'u'],
-      keywords: 'go-uses',
-      section: 'Go To',
-      perform: () => router.push('/uses'),
-      icon: <Lottie lottieRef={usesRef} style={iconSize} animationData={usesIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'reminder',
-      name: 'Reminder',
-      shortcut: ['g', 'r'],
-      keywords: 'go-reminder',
-      section: 'Go To',
-      perform: () => router.push('/reminder'),
-      icon: <Lottie lottieRef={reminderRef} style={iconSize} animationData={reminderIcon} loop={false} autoplay={false} />,
-    },
+    
   ]
 
   return (
