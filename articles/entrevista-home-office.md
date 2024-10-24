@@ -13,4 +13,4 @@ date: "2012-12-04"
 
 <p>Veja a matéria em versão impressa: <a href="/img/posts/revista-colombo-01.jpeg">Parte 1</a> - <a href="/img/posts/revista-colombo-02.jpeg">Parte 2</a></p>
 
-<!-- <p>Home office é um regime de trabalho cada vez mais comum no Brasil que traz vantagens para empresas e profissionais. Segundo Zeno Rocha, engenheiro de software da Liferay Brasil, "Uma das maiores dificuldades diz respeito ao controle do tempo. Trabalhar em casa exige alto grau de responsabilidade, disciplina, organização e comprometimento".</p> -->
+<!-- <p>Home office é um regime de trabalho cada vez mais comum no Brasil que traz vantagens para empresas e profissionais. Segundo Zixiang He, engenheiro de software da Liferay Brasil, "Uma das maiores dificuldades diz respeito ao controle do tempo. Trabalhar em casa exige alto grau de responsabilidade, disciplina, organização e comprometimento".</p> -->

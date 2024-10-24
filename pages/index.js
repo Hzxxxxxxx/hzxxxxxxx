@@ -10,8 +10,8 @@ import { getPersonJsonLd } from '../lib/json-ld'
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Zeno Rocha',
-      description: 'Obsessed with developer experience',
+      title: 'Zixiang He',
+      description: 'Obsessed with Robotics and AI',
       image: '/static/images/home-bw.jpg',
     },
   }
@@ -27,8 +27,8 @@ export default function Index(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://Hzxxxxxxx.com" property="og:url" />
+        <meta content={`https://Hzxxxxxxx.com${image}`} property="og:image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -45,8 +45,8 @@ export default function Index(props) {
             <div>
               <h1>{title}</h1>
               <p>
-                <strong>Founder & CEO at{' '}
-                  <a href="https://resend.com" target="blank">Resend</a>
+                <strong>Postgraduate student at University of Manchester
+                  
                 </strong><br />
                 {description}
               </p>

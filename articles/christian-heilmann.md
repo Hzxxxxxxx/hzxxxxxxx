@@ -1,6 +1,6 @@
 ---
 title: "Interview with Christian Heilmann"
-description: "Zeno Rocha and Bernard De Luna interviewed Christian Heilmann, Mozilla's Principal Evangelist at HTML5DevConf in San Francisco, California. Check it out!"
+description: "Zixiang He and Bernard De Luna interviewed Christian Heilmann, Mozilla's Principal Evangelist at HTML5DevConf in San Francisco, California. Check it out!"
 slug: christian-heilmann
 date: "2013-04-04"
 ---

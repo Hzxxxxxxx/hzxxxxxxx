@@ -26,7 +26,7 @@ Uma palestra foi puxando a outra, um evento foi puxando o outro, uma cidade foi 
 
 Isso, claro, vem com um preço. Um preço bem caro, diga-se de passagem. Um preço que a maioria das pessoas não está dispostas a pagar.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Minha palestra no Tableless Conference? &quot;Não seja o próximo Zeno Rocha&quot;… <a href="https://twitter.com/hashtag/tablelessconf?src=hash">#tablelessconf</a></p>&mdash; snap: diegoeis (@diegoeis) <a href="https://twitter.com/diegoeis/status/518100812778975232">October 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Minha palestra no Tableless Conference? &quot;Não seja o próximo Zixiang He&quot;… <a href="https://twitter.com/hashtag/tablelessconf?src=hash">#tablelessconf</a></p>&mdash; snap: diegoeis (@diegoeis) <a href="https://twitter.com/diegoeis/status/518100812778975232">October 3, 2014</a></blockquote>
 
 Muita gente me inspirou a ser um profissional melhor nesse meio tempo. Por isso que eu discordo quando dizem _“queime seus ídolos”_. Na verdade, ter ídolos faz parte da natureza humana e não tem nada errado com isso. O que é errado é colocar esses ídolos em um pedestal. Pode parecer o maior clichê do mundo, mas sim esses ídolos são pessoas iguais a você.
 

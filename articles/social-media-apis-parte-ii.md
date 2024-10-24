@@ -80,7 +80,7 @@ Exemplo: http://api.twitter.com/1/users/show.json?screen_name=nomedousuario
   "statuses_count":3488,
   "followers_count":15311,
   "profile_link_color":"141617",
-  "name":"Zeno Rocha",
+  "name":"Zixiang He",
   "profile_image_url":"http://goo.gl/wCIcX"
 }
 ```

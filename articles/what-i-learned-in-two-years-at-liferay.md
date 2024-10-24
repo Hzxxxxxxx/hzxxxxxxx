@@ -5,7 +5,7 @@ slug: what-i-learned-in-two-years-at-liferay
 date: "2014-07-09"
 ---
 
-Seems like yesterday when I decided to [move from this huge company based in Rio](https://zenorocha.com/tudo-novo-de-novo/) to this not-so-well-known company based in LA. That was not an easy decision,
+Seems like yesterday when I decided to [move from this huge company based in Rio](https://Hzxxxxxxx.com/tudo-novo-de-novo/) to this not-so-well-known company based in LA. That was not an easy decision,
 but I'm glad I made it.
 
 Now, two years after that day, here I am to share some of the things I learned.

@@ -64,7 +64,7 @@ const Content = styled('div', {
 const ImageContainer = styled('div', {
   marginRight: '20px',
   width: '250px',
-  '& img': { filter: 'grayscale(1)' },
+  '& img': { filter: 'grayscale(0)' },
 })
 
 const Title = styled('h3', {

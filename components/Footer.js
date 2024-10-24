@@ -8,25 +8,16 @@ export default function Footer() {
       url: '/contact',
       icon: 'ri-mail-line',
     },
-    {
-      title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
-      icon: 'ri-twitter-line',
-    },
+    
     {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/Hzxxxxxxx',
       icon: 'ri-github-line',
     },
     {
       title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
+      url: 'https://www.linkedin.com/in/%E7%B1%BD%E7%BF%94-%E8%B4%BA-895520334/?locale=en_US',
       icon: 'ri-linkedin-line',
-    },
-    {
-      title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
-      icon: 'ri-instagram-line',
     },
   ]
 

@@ -1,6 +1,6 @@
 ---
 title: Como fizemos o oldRadio?
-description: "Nos dois últimos eventos que nós (Zeno Rocha e Bernard de Luna) estivemos presentes (TDC 2012 em São Paulo e Front in BH em Minas Gerais), fizemos questão de apresentar nosso primeiro experimento juntos, o Old Radio, que figura hoje na galeria Mozilla Demo Studios."
+description: "Nos dois últimos eventos que nós (Zixiang He e Bernard de Luna) estivemos presentes (TDC 2012 em São Paulo e Front in BH em Minas Gerais), fizemos questão de apresentar nosso primeiro experimento juntos, o Old Radio, que figura hoje na galeria Mozilla Demo Studios."
 image: /static/img/tumblr/tumblr_m6wxcmvAt21qe3219.jpg
 lang: pt-BR
 date: "2012-07-19"
@@ -8,7 +8,7 @@ date: "2012-07-19"
 
 <!-- <p class="demo-download"><a href="https://developer.mozilla.org/pt-BR/demos/detail/old-radio/launch" target="_blank"><img class="botao" src="/static/img/tumblr/tumblr_lk325lvHwF1qe3219.png"/></a> <a href="https://github.com/HTML5-Pro/oldRadio/" target="_blank"><img class="botao" src="/static/img/tumblr/tumblr_lk325u7HMG1qe3219.png"/></a> -->
 
-Nos dois últimos eventos que nós (Zeno Rocha e Bernard de Luna) estivemos presentes (TDC 2012 em São Paulo e Front in BH em Minas Gerais), fizemos questão de apresentar nosso primeiro experimento juntos, o [Old Radio](https://developer.mozilla.org/pt-BR/demos/detail/old-radio/launch), que figura hoje na galeria [Mozilla Demo Studios](https://developer.mozilla.org/pt-BR/demos/detail/old-radio/launch).
+Nos dois últimos eventos que nós (Zixiang He e Bernard de Luna) estivemos presentes (TDC 2012 em São Paulo e Front in BH em Minas Gerais), fizemos questão de apresentar nosso primeiro experimento juntos, o [Old Radio](https://developer.mozilla.org/pt-BR/demos/detail/old-radio/launch), que figura hoje na galeria [Mozilla Demo Studios](https://developer.mozilla.org/pt-BR/demos/detail/old-radio/launch).
 
 Infelizmente o outro criador Zanoni Miranda não pode estar presente, mas sua presença na equipe foi importantíssima e sempre fizemos questão de citá-lo.
 

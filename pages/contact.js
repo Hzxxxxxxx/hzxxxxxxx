@@ -8,8 +8,8 @@ import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Contact // Zeno Rocha',
-    tagline: 'Email me. Like in the old days.',
+    title: 'Contact // Zixiang He',
+    tagline: 'Email me.',
     image: '/static/images/reminder-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
@@ -20,7 +20,7 @@ export async function getStaticProps() {
 
 function Contact(props) {
   const { title, image } = props
-  const description = `<strong>I love chatting</strong> with software engineers, tech founders, students, and creators. <strong>I'm a busy person</strong>, so I can't promise that I'll reply to your email right away, but I'll try my best to respond in a timely manner.`
+  const description = `<strong>I enjoy chatting</strong> with people who share the same passion, as it allows us to exchange ideas, inspire one another, and explore new perspectives in our fields of interest.`
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)
 
@@ -29,7 +29,7 @@ function Contact(props) {
 
     try {
       const isProd = process.env.NODE_ENV === 'production'
-      const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
+      const base = isProd ? 'https://Hzxxxxxxx.com' : 'http://localhost:3000'
 
       await fetch(`${base}/api/email`, {
         method: 'POST',
@@ -58,8 +58,8 @@ function Contact(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/contact" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://Hzxxxxxxx.com/contact" property="og:url" />
+        <meta content={`https://Hzxxxxxxx.com${image}`} property="og:image" />
       </Head>
 
       <Box>
@@ -98,7 +98,7 @@ function Contact(props) {
 const Form = styled('form', {
   display: 'flex',
   flexDirection: 'column',
-  maxWidth: '400px'
+  maxWidth: '800px'
 })
 
 const FormGroup = styled('div', {
