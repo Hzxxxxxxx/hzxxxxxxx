@@ -1,6 +1,6 @@
 ---
 title: Research on Stackelberg Game Decision Analysis of Multi-Agent System Based on LLM
-description: "This paper explores the integration of a Large Language Model (LLM) into a Multi-Agent System for decision analysis within a game theory framework. It employs the Stackelberg Game to guide agents towards a Nash equilibrium and validates the approach through experiments. The study also introduces prompt engineering to enhance LLM outputs and compares decision-making performance across different numbers of shots and LLM models."
+description: "This paper explores the integration of a Large Language Model (LLM) into a Multi-Agent System for decision analysis within a game theory framework. It employs the Stackelberg Game to guide agents towards a Nash equilibrium and validates the approach through experiments. The study also introduces prompt engineering to enhance LLM outputs and compares decision-making performance across different numbers of shots and LLM models.(Submitted)"
 image: /static/img/posts/how-is-life-post-yc.jpg
 date: "2024-02-12"
 ---
