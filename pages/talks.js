@@ -112,7 +112,7 @@ function TalkItem(props) {
           talk.presentations.map((presentation, pIndex) => {
             return (
               <li key={pIndex}>
-                <em>Company:</em>{' '}
+                <em>Position:</em>{' '}
                 <a href={presentation.url} target="_blank" rel="noopener noreferrer">
                   {presentation.title}
                 </a>{' '}

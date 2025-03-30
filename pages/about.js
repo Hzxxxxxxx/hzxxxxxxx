@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'About // Zixiang He',
     description:
-      "My focus is on developing intelligent robotic systems, particularly through the application of model predictive control and game theory. I am involved in projects that integrate theory with practice, including robotic arm control and the use of the Robot Operating System (ROS and ROS2).",
+      "My research focuses on intelligent robotic systems, especially using model predictive control (MPC), reinforcement learning, and game theory. I'm currently working on robotic arm control with ROS2 and MoveIt, and interested in multi-agent collaboration, medical robotics, and task planning. I’m passionate about applying theory into real-world robotic systems, and continuously exploring ways to make robots smarter and more efficient.",
     tagline: 'Explore. Engineer. Excel.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
@@ -110,18 +110,47 @@ function About(props) {
     )
   }
 
+
   const renderSkills = () => {
     return (
       <Section>
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Programming Languages:</strong> C++, Python</li>
-          <li><strong>Languages:</strong> Chinese (Native), English</li>
-          <li><strong>Technologies:</strong> ROS2, ROS, Rviz, Gazebo</li>
+        <h2>Skills & Expertise</h2>
+        <ul style={{ paddingLeft: '1em' }}>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Programming:</strong> C++, Python, Bash, MATLAB
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Frameworks:</strong> ROS2, ROS1, MoveIt, MPC, OpenCV
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Simulation:</strong> Gazebo, RViz, PyBullet
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Hardware:</strong> Realman Robotic Arm, RPLiDAR, Realsense
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Tools:</strong> Git, Docker, VSCode, Ubuntu, Jupyter, Manim
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: 'nowrap' }}>
+              <strong>Soft Skills:</strong> Research, Collaboration, Technical Writing, Presentations
+            </span>
+          </li>
         </ul>
       </Section>
     )
   }
+  
 
   const renderAll = () => {
     return items.map((item, index) => {
