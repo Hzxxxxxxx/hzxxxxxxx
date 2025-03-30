@@ -57,10 +57,17 @@ function Projects(props) {
       <AnimateSharedLayout>
         <ProjectSection>
           <h2>A Study on 360-Degree 2D Lidar System for Obstacle Detection and Environmental Sensing</h2>
-          <video width="100%" height="400" controls style={{ border: '1px solid #ccc' }}>
-            <source src="static/vedio/Coursework2.mov" type="video/quicktime" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            width="100%"
+            height="400"
+            style={{ border: '1px solid #ccc' }}
+            src="https://www.youtube.com/embed/oMhbYPXuK8o"
+            title="Coursework2 - RPLidar Evaluation"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+
           <Paragraph>
             This video provides a comprehensive overview of the RPLidar sensor's working principle and performance evaluation. It introduces key metrics such as accuracy, range, angular resolution, and material reflectivity, and outlines their impact on RPLiDAR performance in various scenarios. The video explains the underlying time-of-flight principle, details the experimental methodology used to characterize the sensor, and presents visualized data to support our analysis. The results offer insights into the sensor's strengths and limitations, with clear conclusions supported by empirical evidence.
           </Paragraph>
